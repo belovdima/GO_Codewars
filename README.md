@@ -14,3 +14,17 @@ func BoolToWord(word bool) string {
 }
 
 ```
+
+## Convert a String to a Number!
+
+```
+package kata
+
+import "strconv"
+
+func StringToNumber(str string) int {
+	output, _ := strconv.Atoi(str)
+	return output
+}
+
+```
