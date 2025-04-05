@@ -58,3 +58,30 @@ func main() {
 }
 
 ```
+
+## Чётное или нечётное
+Напиши функцию, которая принимает число и возвращает true, если оно чётное, и false, если нечётное.
+
+```
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
+
+func main() {
+	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Printf("ВВедите число ")
+	scanner.Scan()
+	number, _ := strconv.Atoi(scanner.Text())
+	if number%2 == 0 {
+		fmt.Println("Число чётное")
+	} else {
+		fmt.Println("Число нечётное")
+	}
+}
+
+```
