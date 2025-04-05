@@ -85,3 +85,31 @@ func main() {
 }
 
 ```
+## Сумма чисел от 1 до N
+
+Напиши функцию, которая принимает число n и возвращает сумму чисел от 1 до n включительно (через цикл for).
+
+```
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
+
+func main() {
+	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Printf("ВВедите число ")
+	scanner.Scan()
+	sum := 0
+	number, _ := strconv.Atoi(scanner.Text())
+	for i := 0; i <= number; i++ {
+		sum = sum + i
+		fmt.Println(sum)
+	}
+
+}
+
+```
