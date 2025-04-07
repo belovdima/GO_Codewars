@@ -213,3 +213,28 @@ func main() {
 	}
 }
 ```
+
+# Найти максимальное число в слайсе
+
+```
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	arr := [5]int{1, 5, 90, 12, 3}
+	output := arr[0]
+
+	for i := 0; i < len(arr); i++ {
+		if arr[i] > output {
+			output = arr[i]
+		}
+	}
+
+	fmt.Println(output)
+
+}
+
+```
